@@ -1,0 +1,62 @@
+name: Daily NSE Data Fetch
+
+# DISABLED BY DEFAULT. This workflow exists and can be tested right now via
+# the "Run workflow" button (Actions tab -> Daily NSE Data Fetch -> Run
+# workflow) -- that's the `workflow_dispatch` trigger below, always active.
+#
+# The scheduled trigger is commented out on purpose. To enable daily
+# automatic runs:
+#   1. Run it manually a few times first (above) and check the run summary --
+#      NSE actively blocks/rate-limits a lot of automated traffic, and
+#      GitHub-hosted runners are datacenter IPs, which NSE is more likely to
+#      block than a residential one. Confirm it actually works from a GitHub
+#      runner before trusting a schedule.
+#   2. In the repo's Settings -> Actions -> General -> Workflow permissions,
+#      select "Read and write permissions" (needed for the auto-commit step).
+#   3. Uncomment the `schedule:` block below and push.
+#
+# on:
+#   schedule:
+#     # 12:30 UTC = 6:00pm IST, well after NSE's 3:30pm IST close.
+#     # Runs Mon-Fri only (cron day-of-week 1-5); NSE has its own holiday
+#     # calendar on top of that, which this workflow does not check --
+#     # a no-trading-day run just finds 0 new rows and is a no-op.
+#     - cron: "30 12 * * 1-5"
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch latest NSE data
+        # Tries nselib first (includes delivery data); falls back to
+        # charting.nseindia.com (OHLCV only) if that fails. See the comment
+        # block at the top of fetch_nse_daily.py for what was actually
+        # verified live vs. just documented for each path.
+        run: python scripts/fetch_nse_daily.py public/data
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: daily NSE data fetch $(date -u +%Y-%m-%d)"
+            git push
+          fi

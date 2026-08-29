@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  --color-canvas: #0a0e14;
+  --color-surface: #11161f;
+  --color-surface-raised: #161d29;
+  --color-line: #232b38;
+  --color-ink: #e6edf5;
+  --color-ink-muted: #6b7a8d;
+  --color-ink-faint: #3d4856;
+
+  --color-bull: #2fd68f;
+  --color-bull-bg: #2fd68f1a;
+  --color-bear: #ff5c72;
+  --color-bear-bg: #ff5c721a;
+  --color-watch: #e8b339;
+  --color-watch-bg: #e8b3391a;
+  --color-signal: #5b8cff;
+  --color-signal-bg: #5b8cff1a;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-signal-bg);
+  }
+
+  /* every number in the app renders in tabular monospace -- the one
+     deliberate signature carried through every page and table. */
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 2px;
+  }
+}
