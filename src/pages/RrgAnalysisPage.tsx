@@ -137,7 +137,36 @@ export function RrgAnalysisPage() {
           Performance Comparison
         </button>
       </div>
-
+      //////////////////
+      {viewMode === "scatter" && (
+        <div className="rounded-sm border border-line bg-surface p-3">
+          <div className="mb-1 flex items-center justify-between text-[11px] text-ink-muted">
+            <span>Historical Replay</span>
+            <span className="num text-ink">{asOfDate}</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={togglePlay}
+              className="rounded-sm border border-line bg-surface-raised px-3 py-1 text-xs font-medium text-ink hover:border-signal hover:text-signal"
+              disabled={timeline.length < 2}
+            >
+              {isPlaying ? "Pause" : "Play"}
+            </button>
+            <input
+              type="range"
+              min={0}
+              max={Math.max(0, timeline.length - 1)}
+              value={replayIndex}
+              onChange={(e) => {
+                setIsPlaying(false);
+                setReplayIndex(Number(e.target.value));
+              }}
+              className="w-full accent-signal"
+            />
+          </div>
+        </div>
+      )}
+      ////////////////////
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_220px]">
         <div className="h-[560px] rounded-sm border border-line bg-surface p-2">
           {viewMode === "scatter" ? (
@@ -210,7 +239,7 @@ export function RrgAnalysisPage() {
         </div>
       </div>
 
-      {viewMode === "scatter" && (
+      /* {viewMode === "scatter" && (
         <div className="rounded-sm border border-line bg-surface p-3">
           <div className="mb-1 flex items-center justify-between text-[11px] text-ink-muted">
             <span>Historical Replay</span>
@@ -237,7 +266,7 @@ export function RrgAnalysisPage() {
             />
           </div>
         </div>
-      )}
+      )} */
     </div>
   );
 }
