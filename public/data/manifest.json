@@ -1,249 +1,270 @@
 {
-  "generated_at": "2026-11-06T20:00:08.307012+00:00",
+  "generated_at": "2026-11-13T20:00:09.427199+00:00",
   "symbols": [
     {
       "symbol": "ALPHA",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/ALPHA.json"
     },
     {
       "symbol": "ALPHAETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/ALPHAETF.json"
     },
     {
       "symbol": "ALPL30IETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/ALPL30IETF.json"
     },
     {
       "symbol": "AUTOBEES",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/AUTOBEES.json"
     },
     {
       "symbol": "BANKBEES",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/BANKBEES.json"
     },
     {
       "symbol": "BFSI",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/BFSI.json"
-    },
-    {
-      "symbol": "CHEMICAL",
-      "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
-      "file": "symbols/CHEMICAL.json"
     },
     {
       "symbol": "COMMOIETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/COMMOIETF.json"
-    },
-    {
-      "symbol": "CONSUMBEES",
-      "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
-      "file": "symbols/CONSUMBEES.json"
     },
     {
       "symbol": "CPSEETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/CPSEETF.json"
     },
     {
       "symbol": "EVINDIA",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/EVINDIA.json"
     },
     {
       "symbol": "FMCGIETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/FMCGIETF.json"
+    },
+    {
+      "symbol": "GOLDBEES",
+      "rows": 127,
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
+      "file": "symbols/GOLDBEES.json"
     },
     {
       "symbol": "HDFCSENSEX",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/HDFCSENSEX.json"
     },
     {
       "symbol": "HDFCSML250",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/HDFCSML250.json"
     },
     {
       "symbol": "HEALTHY",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/HEALTHY.json"
+    },
+    {
+      "symbol": "HNGSNGBEES",
+      "rows": 127,
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
+      "file": "symbols/HNGSNGBEES.json"
     },
     {
       "symbol": "ICICIB22",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/ICICIB22.json"
-    },
-    {
-      "symbol": "INFRAIETF",
-      "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
-      "file": "symbols/INFRAIETF.json"
     },
     {
       "symbol": "ITBEES",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/ITBEES.json"
     },
     {
       "symbol": "JUNIORBEES",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/JUNIORBEES.json"
     },
     {
       "symbol": "LOWVOLIETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/LOWVOLIETF.json"
+    },
+    {
+      "symbol": "MAFANG",
+      "rows": 127,
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
+      "file": "symbols/MAFANG.json"
     },
     {
       "symbol": "MAKEINDIA",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MAKEINDIA.json"
     },
     {
       "symbol": "MASPTOP50",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MASPTOP50.json"
-    },
-    {
-      "symbol": "METALIETF",
-      "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
-      "file": "symbols/METALIETF.json"
     },
     {
       "symbol": "MIDCAP",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MIDCAP.json"
     },
     {
       "symbol": "MIDCAPETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MIDCAPETF.json"
     },
     {
       "symbol": "MODEFENCE",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MODEFENCE.json"
     },
     {
       "symbol": "MOM30IETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MOM30IETF.json"
     },
     {
       "symbol": "MON100",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MON100.json"
     },
     {
       "symbol": "MONIFTY500",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MONIFTY500.json"
     },
     {
       "symbol": "MOREALTY",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/MOREALTY.json"
     },
     {
       "symbol": "NIFTYBEES",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/NIFTYBEES.json"
+    },
+    {
+      "symbol": "NV20IETF",
+      "rows": 127,
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
+      "file": "symbols/NV20IETF.json"
+    },
+    {
+      "symbol": "OILIETF",
+      "rows": 127,
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
+      "file": "symbols/OILIETF.json"
     },
     {
       "symbol": "PHARMABEES",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/PHARMABEES.json"
+    },
+    {
+      "symbol": "PSUBNKBEES",
+      "rows": 127,
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
+      "file": "symbols/PSUBNKBEES.json"
     },
     {
       "symbol": "PVTBANIETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/PVTBANIETF.json"
+    },
+    {
+      "symbol": "SILVERBEES",
+      "rows": 127,
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
+      "file": "symbols/SILVERBEES.json"
     },
     {
       "symbol": "SMALLCAP",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/SMALLCAP.json"
     },
     {
       "symbol": "TNIDETF",
       "rows": 127,
-      "start_date": "2026-05-06",
-      "end_date": "2026-11-05",
+      "start_date": "2026-05-13",
+      "end_date": "2026-11-12",
       "file": "symbols/TNIDETF.json"
     }
   ]
